@@ -1,9 +1,15 @@
 # Wisia
-Wisia is a basic search engine powered with Google! **Only for PC**
+Wisia is a basic search engine powered with Google!
 
 # Screenshots
 
-![image](https://user-images.githubusercontent.com/91078294/142757095-11e2c356-ef99-4d9f-b598-2f31a5210250.png)
+**PC**
+
+![image](https://user-images.githubusercontent.com/91078294/142765995-b1c21a62-93aa-43bf-9a64-bed8594541c2.png)
+
+**MOBILE**
+
+![image](https://user-images.githubusercontent.com/91078294/142766094-428be64b-f333-4b2f-9a75-c5b3266c8540.png)
 
 # Example
 
