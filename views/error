@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wisia</title>
+     <link rel="stylesheet" href="index.css">
+    <script
+      src="https://kit.fontawesome.com/b198190252.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2 align="center">
+      Wisia
+    </h2>
+    <br />
+    <h2 align="center">
+      <%=statuscode%> | <%=message%>
+    </h2>
+  </body>
+</html>
