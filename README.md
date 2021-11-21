@@ -10,4 +10,10 @@ Wisia is a basic search engine powered with Google! **Only for PC**
 https://wisia.glitch.me/
 
 
-[![Discord](https://img.shields.io/discord/771291725909721098?style=plastic)](https://discord.gg/4eeuQne) [![Github](https://img.shields.io/github/followers/vsldev1409?style=social)](https://github.com/vsldev1409)
+[![Discord](https://img.shields.io/discord/762267257551978527?style=plastic)](https://discord.gg/EMXYEvv) [![Github](https://img.shields.io/github/followers/vsldev1409?style=social)](https://github.com/vsldev1409)
+
+# Support
+
+If you got an error, you can come to my discord server and ask for help!
+
+[Discord](https://discord.gg/EMXYEvv)
