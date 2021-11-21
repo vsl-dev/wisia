@@ -1,180 +1,212 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Noto Sans KR', sans-serif;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-body{
-	background-image: url('https://cdn.glitch.me/1d36c9c8-96d4-4dd9-9ffd-77ba4b69b8f8%2F1613546197_23-p-fon-dlya-prezentatsii-belogo-tsveta-25.jpg?v=1633627769839');
+body {
+  background-image: url("https://cdn.glitch.me/1d36c9c8-96d4-4dd9-9ffd-77ba4b69b8f8%2F1613546197_23-p-fon-dlya-prezentatsii-belogo-tsveta-25.jpg?v=1633627769839");
 }
 
-.header{
-	width: 1000px;
-	padding: 20px;
-	background: #7690da;
-	margin: 25px auto;
-	text-align: center;
+.header {
+  width: 1000px;
+  padding: 20px;
+  background: #7690da;
+  margin: 25px auto;
+  /* 	border-radius: 5px; */
+  text-align: center;
 }
 
-.header p{
-	font-size: 45px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
+.header p {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
 }
 
-.container .input{
+.container .input {
   border: 0;
-	outline: none;
+  outline: none;
   color: #8b7d77;
-} 
-
-.search_wrap{
-	width: 500px;
-	margin: 38px auto;
 }
 
-.search_wrap .search_box{
-	position: relative;
-	width: 500px;
-	height: 60px;
+.search_wrap {
+  width: 450px;
+  margin: 38px auto;
 }
 
-.search_wrap .search_box .input{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 10px 20px;
-  border-radius: 3px; 
-	font-size: 18px;
+.search_wrap .search_box {
+  position: static;
+  width: 250px;
+  height: 60px;
 }
 
-.search_wrap .search_box .btn:hover{
-	background: #708bd2;	
+.search_wrap .search_box .input {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 18px;
 }
 
-.search_wrap .search_box .btn.btn_common .fas{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: #fff;
-	font-size: 20px;
+.search_wrap.search_wrap .search_box .input {
+  border-radius: 50px;
 }
 
-.search_wrap.search_wrap .search_box .input{
-	border-radius: 50px;
-}
-
-.search_wrap.search_wrap .search_box .btn{
-	width: 125px;
-	height: 45px;
-	top: 8px;
-	right: 5px;
-	border-radius: 3px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.search_wrap.search_wrap .search_box .btn{
-	border-radius: 25px;
-}
-
-
-.search_wrap.search_wrap .search_box .input{
-	padding-right: 145px;
+.search_wrap.search_wrap .search_box .input {
+  padding-right: 145px;
+  position: static;
   border: none;
   height: 50px;
   width: 500px;
   outline: none;
   margin-bottom: 20%;
-  border-radius: 35px ;
-  color: rgb(110,110,110);
+  border-radius: 35px;
+  color: rgb(110, 110, 110);
   font-size: 1rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 200;
   text-align: left;
   transition: 0.8s;
-  position: center;
 }
 
-.search_wrap.search_wrap .search_box .input:hover{
+.search_wrap.search_wrap .search_box .input:hover {
   transition: 0.8s;
   transform: translateY(-1px);
 }
 
 .footer-basic {
-  padding:40px 0;
-  color:#4b4c4d;
+  padding: 40px 0;
+  color: #4b4c4d;
 }
 
 .footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .footer-basic li {
-  padding:0 10px;
+  padding: 0 10px;
 }
 
 .footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .footer-basic ul a:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 .footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 .footer-basic .social > a {
-  font-size:24px;
-  width:50px;
-  height:50px;
-  line-height:48px;
-  display:inline-block;
-  text-align:center;
-  border-radius:40%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 40%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
 }
 
 .footer-basic .social > a:hover {
-  opacity:0.9;
+  opacity: 0.9;
 }
 
 .footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-   color:#aaa;
-  margin-bottom:0;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
 }
 
 .name {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   padding: 0;
   font-size: 64px;
   color: black;
   line-height: 1.8;
   marign-bottom: 0;
+}
+
+/* FOR MOBILE */
+
+@media only screen and (max-width: 600px) {
+  
+  
+.container .input {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+}
+
+.search_wrap {
+  width: 350px;
+  margin: 48px auto;
+}
+
+.search_wrap .search_box {
+  position: static;
+  width: 350px;
+  height: 60px;
+}
+
+.search_wrap .search_box .input {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+  
+.search_wrap.search_wrap .search_box .input {
+  border-radius: 50px;
+}
+
+.search_wrap.search_wrap .search_box .input {
+  padding-right: 145px;
+  position: static;
+  border: none;
+  height: 50px;
+  width: 350px;
+  outline: none;
+  margin-bottom: 20%;
+  border-radius: 35px;
+  color: rgb(110, 110, 110);
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  text-align: left;
+  transition: 0.8s;
+}
+
+.search_wrap.search_wrap .search_box .input:hover {
+  transition: 0.8s;
+  transform: translateY(-1px);
+}
+
+  
 }
