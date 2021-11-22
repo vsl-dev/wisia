@@ -60,7 +60,6 @@ body {
 }
 
 .search_wrap.search_wrap .search_box .input {
-  padding-right: 145px;
   position: static;
   border: none;
   height: 50px;
@@ -187,7 +186,6 @@ body {
 }
 
 .search_wrap.search_wrap .search_box .input {
-  padding-right: 145px;
   position: static;
   border: none;
   height: 50px;
