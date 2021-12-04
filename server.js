@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require("express");
 const app = express();
 const bodyparser = require("body-parser");
 const session = require("express-session");
@@ -8,13 +8,12 @@ const url = require("url");
 
 // pages
 
-app.use(bodyparser.json()); 
-app.use(bodyparser.urlencoded({ extended: true })); 
-app.engine("html", ejs.renderFile); 
-app.set('view engine', 'ejs'); 
-app.set('views', path.join(__dirname, "/views"));
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: true }));
+app.engine("html", ejs.renderFile);
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/views"));
 app.use(express.static(path.join(__dirname, "/public")));
-
 
 app.get("/", (req, res) => {
   res.render("index", {
@@ -22,39 +21,59 @@ app.get("/", (req, res) => {
   });
 });
 
-// links 
+app.get("/partners", (req, res) => {
+  res.render("partners", {
+    user: req.user
+  });
+});
 
- app.get('/b/github', function (req, res) {
-  res.redirect('https://github.com/')
-})
+app.get("/about", (req, res) => {
+  res.render("about", {
+    user: req.user
+  });
+});
 
- app.get('/b/instagram', function (req, res) {
-  res.redirect('https://instagram.com/')
-})
+// links
 
- app.get('/b/discord', function (req, res) {
-  res.redirect('https://discord.com/')
-})
+app.get("/b/github", function(req, res) {
+  res.redirect("https://github.com/");
+});
 
- app.get('/b/youtube', function (req, res) {
-  res.redirect('https://youtube.com/')
-})
+app.get("/b/instagram", function(req, res) {
+  res.redirect("https://instagram.com/");
+});
 
- app.get('/b/facebook', function (req, res) {
-  res.redirect('https://facebook.com/')
-})
+app.get("/b/discord", function(req, res) {
+  res.redirect("https://discord.com/");
+});
 
- app.get('/b/reddit', function (req, res) {
-  res.redirect('https://reddit.com/')
-})
+app.get("/b/youtube", function(req, res) {
+  res.redirect("https://youtube.com/");
+});
 
- app.get('/b/twitter', function (req, res) {
-  res.redirect('https://twitter.com/')
-})
+app.get("/b/facebook", function(req, res) {
+  res.redirect("https://facebook.com/");
+});
 
-app.get('/b/gmail', function (req, res) {
-  res.redirect('https://mail.google.com/')
-})
+app.get("/b/reddit", function(req, res) {
+  res.redirect("https://reddit.com/");
+});
+
+app.get("/b/twitter", function(req, res) {
+  res.redirect("https://twitter.com/");
+});
+
+app.get("/b/gmail", function(req, res) {
+  res.redirect("https://mail.google.com/");
+});
+
+app.get("/wisia-source", function(req, res) {
+  res.redirect("https://github.com/vsldev1409/wisia");
+});
+
+app.get("/support", function(req, res) {
+  res.redirect("https://discord.gg/EMXYEvv");
+});
 
 // error
 
@@ -71,7 +90,7 @@ app.use((req, res) => {
   err.status = 404;
   return res.redirect(
     url.format({
-      pathname: "/hata",
+      pathname: "error",
       query: {
         statuscode: 404,
         message: "Page Not Found!"
@@ -80,8 +99,8 @@ app.use((req, res) => {
   );
 });
 
+
 // other
 
 app.listen(8080);
-console.log("Wisia is runing! discord.gg/4eeuQne");
-
+console.log("Wisia is runing! https://vsldev.glitch.me/discord");
