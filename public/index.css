@@ -60,24 +60,34 @@ body {
 }
 
 .search_wrap.search_wrap .search_box .input {
+  /*   padding-right: 145px; */
   position: static;
   border: none;
   height: 50px;
-  width: 500px;
+  width: 490px;
   outline: none;
   margin-bottom: 20%;
-  border-radius: 35px;
+  border-radius: 25px;
   color: rgb(110, 110, 110);
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 200;
   text-align: left;
-  transition: 0.8s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  transition: 1s;
 }
 
 .search_wrap.search_wrap .search_box .input:hover {
-  transition: 0.8s;
-  transform: translateY(-1px);
+  transition: 1s;
+  box-shadow: 0 3px 13px rgba(0,0,0,0.3);
+  transform: scale(1.02, 1.02);
+}
+
+.search_wrap.search_wrap .search_box .input:focus {
+  transition: 1s;
+  box-shadow: 0 3px 13px rgba(0,0,0,0.3);
+  transform: scale(1.02, 1.02);
 }
 
 .footer-basic {
@@ -137,6 +147,7 @@ body {
   font-size: 13px;
   color: #aaa;
   margin-bottom: 0;
+  font-family: "Pacifico", cursive;
 }
 
 .name {
@@ -151,64 +162,67 @@ body {
 /* FOR MOBILE */
 
 @media only screen and (max-width: 600px) {
-  
-  
-.container .input {
-  border: 0;
-  outline: none;
-  color: #8b7d77;
-}
+  .container .input {
+    border: 0;
+    outline: none;
+    color: #8b7d77;
+  }
 
-.search_wrap {
-  width: 350px;
-  margin: 48px auto;
-}
+  .search_wrap {
+    width: 350px;
+    margin: 48px auto;
+  }
 
-.search_wrap .search_box {
-  position: static;
-  width: 350px;
-  height: 60px;
-}
+  .search_wrap .search_box {
+    position: static;
+    width: 350px;
+    height: 60px;
+  }
 
-.search_wrap .search_box .input {
-  position: static;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 10px 20px;
-  border-radius: 3px;
-  font-size: 18px;
-}
-  
-.search_wrap.search_wrap .search_box .input {
-  border-radius: 50px;
-}
+  .search_wrap .search_box .input {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+  }
 
-.search_wrap.search_wrap .search_box .input {
-  position: static;
-  border: none;
-  height: 50px;
-  width: 350px;
-  outline: none;
-  margin-bottom: 20%;
-  border-radius: 35px;
-  color: rgb(110, 110, 110);
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 200;
-  text-align: left;
-  transition: 0.8s;
-}
+  .search_wrap.search_wrap .search_box .input {
+    border-radius: 50px;
+  }
+
+  .search_wrap.search_wrap .search_box .input {
+    /*     padding-right: 145px; */
+    position: static;
+    border: none;
+    height: 50px;
+    width: 350px;
+    outline: none;
+    margin-bottom: 20%;
+    border-radius: 35px;
+    color: rgb(110, 110, 110);
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    text-align: left;
+    transition: 0.8s;
+  }
 
 .search_wrap.search_wrap .search_box .input:hover {
-  transition: 0.8s;
-  transform: translateY(-1px);
+  transition: 1s;
+  box-shadow: 0 3px 13px rgba(0,0,0,0.3);
+  transform: scale(1.02, 1.02);
 }
-
   
+.search_wrap.search_wrap .search_box .input:focus {
+  transition: 1s;
+  box-shadow: 0 3px 13px rgba(0,0,0,0.3);
+  transform: scale(1.02, 1.02);
 }
-
+}
 
 /* scrollbar */
 
@@ -217,13 +231,186 @@ body {
   height: 15px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 3px grey; 
+  box-shadow: inset 0 0 3px grey;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: grey; 
+  background: grey;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: grey; 
+  background: grey;
+}
+
+/* selection */
+
+::selection {
+  background-color: grey;
+  color: #ffffff;
+}
+
+/* partners */
+
+#partners {
+  margin-top: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+#partners h3 {
+  padding-top: 70px;
+}
+#partners p {
+  font-family: var(--main-font-family);
+  font-size: 1.2rem;
+  /* 	padding: 20px; */
+}
+
+.work {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 550px;
+  height: 250px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card .work-content {
+  text-align: center;
+  padding: 0px 5px;
+  font-size: 1.2rem;
+  color: black;
+  font-family: var(--main-font-family);
+  cursor: pointer;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card .work-content:hover {
+  color: #202020;
+}
+
+.card:hover {
+  transition: 0.4s;
+  box-shadow: 0 0 1.5rem grey;
+}
+.imgsz {
+  font-size: 20px;
+}
+
+/* about */
+
+.collapsible {
+  margin: -10% 18%;
+  background-color: #777;
+  color: white;
+  opacity: 70%;
+  cursor: pointer;
+  padding: 18px;
+  width: 64%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+/*   border-radius: 10px; */
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  opacity: 70%;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  opacity: 70%;
+  content: "\2212";
+}
+
+.content {
+ margin: 10% 18%;
+  padding: 0 18px;
+  width: 64%;
+  max-height: 0;
+  border-radius: 0px 0px 0px 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: grey;
+  opacity: 70%;
+}
+
+.codes {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* other */
+
+.collapsible-title {
+  font-family: "Pacifico", cursive;
+  margin: 10% 18%;
+  background-color: #777;
+  color: white;
+  opacity: 70%;
+  padding: 18px;
+  width: 64%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.collapsible-title:hover {
+  background-color: #555;
+}
+
+.collapsible-footer {
+  margin: -10% 18%;
+  background-color: #777;
+  color: white;
+  opacity: 70%;
+  padding: 18px;
+  width: 64%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.collapsible-footer:hover {
+  background-color: #555;
 }
