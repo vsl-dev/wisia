@@ -3,20 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Wisia</title>
+    <title>Wisia | <%= message %></title>
      <link rel="stylesheet" href="index.css">
     <script
       src="https://kit.fontawesome.com/b198190252.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
+    >
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
-    <h2 align="center">
+    <h2 class="name" align="center">
       Wisia
     </h2>
     <br />
-    <h2 align="center">
-      <%=statuscode%> | <%=message%>
-    </h2>
+     <% if(statuscode === "404") { %>   
+    <h2 class="pt-20 text-6xl text-center">
+      4 <i class="animate-spin fa-duotone fa-spinner-third"></i> 4
+    </h2> 
+    
+    <% } else { %>
+    <hr class="new4" />
+    <h3 class="name">
+       <%= statuscode %> | <%= message %>
+    </h3>
+        <% } %>
+    
   </body>
 </html>
