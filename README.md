@@ -18,7 +18,7 @@ Wisia is a basic search engine powered with Google!
 https://wisia.vsldev.tk/
 
 
-[![Discord](https://img.shields.io/discord/762267257551978527?style=plastic)](https://discord.gg/EMXYEvv) [![Github](https://img.shields.io/github/followers/vsldev1409?style=social)](https://github.com/vsldev1409)
+[![Discord](https://img.shields.io/discord/762267257551978527?style=plastic)](https://discord.gg/EMXYEvv) [![Github](https://img.shields.io/github/followers/vsl-dev?style=social)](https://github.com/vsldev1409)
 
 # Support
 
