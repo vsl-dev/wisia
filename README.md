@@ -1,6 +1,9 @@
 # Wisia
 Wisia is a basic search engine powered with Google!
 
+
+[![Stars](https://img.shields.io/github/stars/vsl-dev/wisia?style=social)](https://vsldev.tk/github) [![License](https://img.shields.io/github/license/vsl-dev/wisia)](https://github.com/vsl-dev/wisa/blob/v1.0/LICENSE) [![Version](https://img.shields.io/github/v/release/vsl-dev/wisia)](https://vsldev.tk/links) [![Discord](https://img.shields.io/discord/762267257551978527)](https://vsldev.tk/discord) [![wisi.ml](https://img.shields.io/website?url=https%3A%2F%2Fwisia.vsldev.tk)](https://wisia.vsldev.tk)
+
 ![image](https://cdn.glitch.me/353f4572-362e-4e70-bf65-c0c0c4ccff01%2Fce035a6c-31a8-47f8-a0a4-bae4df65a7f7.image.png?v=1637588631337)
 
 # Screenshots
@@ -16,9 +19,6 @@ Wisia is a basic search engine powered with Google!
 # Example
 
 https://wisia.vsldev.tk/
-
-
-[![Discord](https://img.shields.io/discord/762267257551978527?style=plastic)](https://discord.gg/EMXYEvv) [![Github](https://img.shields.io/github/followers/vsl-dev?style=social)](https://github.com/vsldev1409)
 
 # Support
 
