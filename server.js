@@ -103,4 +103,4 @@ app.use((req, res) => {
 // other
 
 app.listen(8080);
-console.log("Wisia is runing! https://vsldev.glitch.me/discord");
+console.log("Wisia is runing! https://vsldev.tk/discord");
